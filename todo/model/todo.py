@@ -19,4 +19,7 @@ class Todo:
         else:
             return
 
+    def __str__(self):
+        return str(f"{self.code_id} - {self.title}")
+
 
