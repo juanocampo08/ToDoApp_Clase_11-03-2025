@@ -10,5 +10,13 @@ class Todo:
         if self.completed == False:
             self.completed = True
         else:
+            return self.completed
+
+    def add_tag(self, tag: str):
+
+        if tag not in self.tags:
+            self.tags.append(tag)
+        else:
             return
+
 
