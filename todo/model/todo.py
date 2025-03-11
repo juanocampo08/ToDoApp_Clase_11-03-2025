@@ -33,3 +33,7 @@ class TodoBook:
         self.todos[nuevo_id] = todo
         return nuevo_id
 
+    def pending_todos(self) -> list[Todo]:
+        pending_todos: list[Todo] = []
+        for i in range(self.todos):
+
