@@ -4,4 +4,11 @@ class Todo:
         self.title: str = title
         self.description: str = description
         self.completed: bool = False
-        self.tags: list = []
+        self.tags: list[str] = []
+
+    def mark_completed(self):
+        if self.completed == False:
+            self.completed = True
+        else:
+            return
+
