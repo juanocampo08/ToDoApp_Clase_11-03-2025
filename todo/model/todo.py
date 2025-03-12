@@ -34,5 +34,9 @@ class TodoBook:
         return nuevo_id
 
     def pending_todos(self) -> list[Todo]:
-        pending_todos = [todo for todo in self.todos.values() if todo.completed == False ]
+        pending_todos = [todo for todo in self.todos.values() if todo.completed == False]
         return pending_todos
+
+    def completed_todos(self) -> list[Todo]:
+        completed_todo = [todo for todo in self.todos.values() if todo.completed == True]
+        return completed_todo
